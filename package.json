@@ -8,12 +8,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
+    "@next-auth/firebase-adapter": "^0.0.2-canary.207",
+    "firebase": "^8.7.1",
     "next": "12.0.7",
+    "next-auth": "^3.24.0-canary.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-responsive-carousel": "^3.2.22",
+    "react-scripts": "^5.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "eslint": "8.6.0",
-    "eslint-config-next": "12.0.7"
+    "eslint-config-next": "12.0.7",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.12"
   }
 }
