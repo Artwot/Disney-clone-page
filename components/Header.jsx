@@ -40,35 +40,35 @@ const Header = () => {
       {/* If user is logged in, show the links */}
       {session && (
         // Navbar links
-        <div className="hidden ml-10 md:flex items-center space-x-6">
+        <div className="items-center hidden ml-10 md:flex space-x-6">
           <Link href="/">
             <a className="header-link group">
               <HomeIcon className="h-4" />
-              <span className="span">Home</span>
+              <span className="span">Inicio</span>
             </a>
           </Link>
           <Link href="/">
             <a className="header-link group">
               <SearchIcon className="h-4" />
-              <span className="span">Search</span>
+              <span className="span">Búsqueda</span>
             </a>
           </Link>
           <Link href="/">
             <a className="header-link group">
               <PlusSmIcon className="h-4" />
-              <span className="span">Watchlist</span>
+              <span className="span">Mi lista</span>
             </a>
           </Link>
           <Link href="/">
             <a className="header-link group">
               <StarIcon className="h-4" />
-              <span className="span">Originals</span>
+              <span className="span">Originales</span>
             </a>
           </Link>
           <Link href="/">
             <a className="header-link group">
               <img src="/images/movie-icon.svg" alt="" className="h-5" />
-              <span className="span">Movies</span>
+              <span className="span">Películas</span>
             </a>
           </Link>
           <Link href="/">
@@ -89,13 +89,13 @@ const Header = () => {
         transition duration-200"
           onClick={signIn}
         >
-          Login
+          Iniciar sesión
         </button>
       ) : (
         <img
           src={session.user.image}
           alt={session.user.name}
-          className="ml-auto h-12 w-12 rounded-full object-cover cursor-pointer"
+          className="object-cover w-12 h-12 ml-auto rounded-full cursor-pointer"
           onClick={signOut}
         />
       )}
